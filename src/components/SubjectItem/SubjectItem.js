@@ -28,7 +28,7 @@ const SubjectItem = () => {
         </div>
         <div className="box">
           <div className="subject ">
-            <h2>ইতিহাস</h2>
+          <Link to="/historyBooks">ইতিহাস</Link>
           </div>
         </div>
       </div>

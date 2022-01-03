@@ -28,6 +28,11 @@ const Book = ({ order }) => {
           view details
         </Link>
         }
+        {
+          (order?.subCategory === "history") &&  <Link to={`historyBookdetails/${order.id}`} className="btn p-0">
+          view details
+        </Link>
+        }
       </div>
     </div>
   );
