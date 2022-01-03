@@ -7,7 +7,8 @@ import facebook from "../../Images/logo/facebook.jpg";
 
 const Hero = () => {
   return (
-    <div className="container mt-3">
+     <div className="front_hero">
+          <div className="mx-5 mt-3">
       <div className="d-flex justify-content-between align-items-center">
         <div className="logo ">
           <img src={Logo} alt="" />
@@ -68,6 +69,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
+     </div>
   );
 };
 

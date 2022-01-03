@@ -1,27 +1,23 @@
-import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import Hero from "../Hero/Hero";
-import NavigationMenu from "../Shear/NavigationMenu/NavigationMenu";
-import "./BookDetails.css";
-import PreOrder from "../../Data/PreOrder/PreOrder";
-import RelatedBooks from "../RelatedBooks/RelatedBooks";
-import Slider from "react-slick";
-import ReviewsRatings from "../ReviewsRatings/ReviewsRatings";
-import Footer from "../Shear/Footer/Footer";
-const BookDetails = () => {
-  const { id } = useParams();
-  console.log(id);
-  const [bookItem, setBookItem] = useState({});
-  useEffect(() => {
-    const singleBook = PreOrder.find(book=> book.id == id);
-    console.log(singleBook);
-    setBookItem(singleBook);
-  }, [id]);
- 
+import React, { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import Slider from 'react-slick';
+import novelBook from '../../../Data/NovelBook/NovelBook';
+import Hero from '../../Hero/Hero';
+import RelatedBooks from '../../RelatedBooks/RelatedBooks';
+import ReviewsRatings from '../../ReviewsRatings/ReviewsRatings';
+import NavigationMenu from '../../Shear/NavigationMenu/NavigationMenu';
 
-  const [category, setCategory] = useState([]);
+const NovelBookDetails = () => {
+    const { id } = useParams();
+    const [bookItem, setBookItem] = useState({});
+    useEffect(() => {
+      const singleBook = novelBook.find(book=> book.id == id);
+      console.log(singleBook);
+      setBookItem(singleBook);
+    }, [id]);
+    const [category, setCategory] = useState([]);
   useEffect(() => {
-    const Books = PreOrder.filter(
+    const Books = novelBook.filter(
       (related) => related?.category === bookItem?.category
     );
     setCategory(Books);
@@ -61,12 +57,11 @@ const BookDetails = () => {
       },
     ],
   };
-  return (
-    <div>
-      <Hero />
-      <NavigationMenu />
-      <div className="container p-0 mb-4">
-        <Link to="/">Home</Link>
+    return (
+        <div>
+           <Hero/>
+           <NavigationMenu/> 
+           <Link to="/">Home</Link>
         {/* jusr img show in left side  */}
         <div className="row bg-light p-4 justify-content-center w-75 m-auto">
           <div className="col-lg-4">
@@ -116,7 +111,6 @@ const BookDetails = () => {
             </span>
           </div>
         </div>
-        {/* summary specification and author dislaration  */}
         <div className="row mt-3 bg-light p-4 w-75 m-auto">
           <ul className="nav nav-tabs" id="myTab" role="tablist">
             <li className="nav-item" role="presentation">
@@ -315,10 +309,8 @@ const BookDetails = () => {
           </div>
           <ReviewsRatings></ReviewsRatings>
         </div>
-      </div>
-      <Footer />
-    </div>
-  );
+        </div>
+    );
 };
 
-export default BookDetails;
+export default NovelBookDetails;

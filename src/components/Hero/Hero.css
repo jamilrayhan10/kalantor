@@ -1,4 +1,6 @@
-  
+.front_hero{
+  width: 100%;
+}  
 .hover_login{
   /* display:flex; */
   justify-content: center;

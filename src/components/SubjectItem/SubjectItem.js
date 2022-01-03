@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./SubjectItem.css";
 
 const SubjectItem = () => {
@@ -7,7 +8,7 @@ const SubjectItem = () => {
       <div className="subjectItems d-flex justify-content-between">
         <div className="box">
           <div className="subject ">
-            <h2>উপন্যাস</h2>
+            <Link to="/novelBooks">উপন্যাস</Link>
           </div>
         </div>
         <div className="box">

@@ -2,6 +2,7 @@ const PreOrder = [
   {
     id: 1,
     category: "nosihot",
+    subCategory: "islamic",
     img: "https://www.kalantorprokashoni.com/wp-content/uploads/2021/09/Ummahr-Proti-230x357.jpg",
     writerImg:
       "https://www.telegraph.co.uk/multimedia/archive/02051/Sallabi_2051408c.jpg",
@@ -25,6 +26,7 @@ const PreOrder = [
   {
     id: 2,
     category: "salat",
+    subCategory: "islamic",
     img: "https://www.kalantorprokashoni.com/wp-content/uploads/2019/07/Sornokonika-01-230x353.jpg",
     writerImg:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjJoijS6jqTcTeGcBZJjh1JCED-1Fjk5sluw&usqp=CAU",
@@ -39,6 +41,7 @@ const PreOrder = [
   {
     id: 3,
     category: "salat",
+    subCategory: "islamic",
     img: "https://www.kalantorprokashoni.com/wp-content/uploads/2021/08/Muminer-Namaj-1-230x357.jpg",
     writer: "রশীদ জামীল",
     bookName: "মুমিনের নামাজ (পকেটসাইজ)",
@@ -52,6 +55,7 @@ const PreOrder = [
   {
     id: 4,
     category: "nosihot",
+    subCategory: "islamic",
     img: "https://www.kalantorprokashoni.com/wp-content/uploads/2019/10/Ottoman-02-1-230x357.jpg",
     writer: "ড. আলি মুহাম্মাদ সাল্লাবি আলি",
     bookName: "উসমানি খিলাফতের ইতিহাস [অটোমান এম্পায়ার] (শেষ খণ্ড)",
@@ -64,6 +68,7 @@ const PreOrder = [
   {
     id: 5,
     category: "nosihot",
+    subCategory: "islamic",
     img: "https://www.kalantorprokashoni.com/wp-content/uploads/2021/09/Ummahr-Proti-230x357.jpg",
     writer: "ড. আলি মুহাম্মাদ সাল্লাবি আলি",
     bookName: "খুলাফায়ে রাশিদিন সিরিজ",
@@ -75,6 +80,7 @@ const PreOrder = [
   },
   {
     id: 6,
+    subCategory: "islamic",
     img: "https://www.kalantorprokashoni.com/wp-content/uploads/2021/09/Ummahr-Proti-230x357.jpg",
     writer: "ড. আলি মুহাম্মাদ সাল্লাবি আলি",
     bookName: "খুলাফায়ে রাশিদিন সিরিজ",
@@ -85,6 +91,7 @@ const PreOrder = [
   {
     id: 7,
     category: "nosihot",
+    subCategory: "islamic",
     img: "https://www.kalantorprokashoni.com/wp-content/uploads/2021/09/Ummahr-Proti-230x357.jpg",
     writer: "ড. আলি মুহাম্মাদ সাল্লাবি আলি",
     bookName: "খুলাফায়ে রাশিদিন সিরিজ",
@@ -95,6 +102,7 @@ const PreOrder = [
   {
     id: 8,
     category: "nosihot",
+    subCategory: "islamic",
     img: "https://www.kalantorprokashoni.com/wp-content/uploads/2021/09/Ummahr-Proti-230x357.jpg",
     writer: "ড. আলি মুহাম্মাদ সাল্লাবি আলি",
     bookName: "খুলাফায়ে রাশিদিন সিরিজ",
@@ -104,6 +112,7 @@ const PreOrder = [
   },
   {
     id: 9,
+    subCategory: "islamic",
     img: "https://www.kalantorprokashoni.com/wp-content/uploads/2021/09/Ummahr-Proti-230x357.jpg",
     writer: "ড. আলি মুহাম্মাদ সাল্লাবি আলি",
     bookName: "খুলাফায়ে রাশিদিন সিরিজ",
@@ -113,6 +122,7 @@ const PreOrder = [
   },
   {
     id: 10,
+    subCategory: "islamic",
     img: "https://www.kalantorprokashoni.com/wp-content/uploads/2021/09/Ummahr-Proti-230x357.jpg",
     writer: "ড. আলি মুহাম্মাদ সাল্লাবি আলি",
     bookName: "খুলাফায়ে রাশিদিন সিরিজ",
@@ -122,6 +132,7 @@ const PreOrder = [
   },
   {
     id: 11,
+    subCategory: "islamic",
     category: "nosihot",
     img: "https://www.kalantorprokashoni.com/wp-content/uploads/2021/09/Ummahr-Proti-230x357.jpg",
     writer: "ড. আলি মুহাম্মাদ সাল্লাবি আলি",
@@ -133,6 +144,7 @@ const PreOrder = [
   {
     id: 12,
     category: "nosihot",
+    subCategory: "islamic",
     img: "https://www.kalantorprokashoni.com/wp-content/uploads/2020/02/Birat-Waz-Mahfil-230x357.png",
     writer: "রশীদ জামীল",
     bookName: "বিরাট ওয়াজ মাহফিল",
