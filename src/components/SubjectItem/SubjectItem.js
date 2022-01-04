@@ -13,22 +13,22 @@ const SubjectItem = () => {
         </div>
         <div className="box">
           <div className="subject ">
-            <h2>প্রি-অর্ডার</h2>
-          </div>
-        </div>
-        <div className="box">
-          <div className="subject ">
-            <h2>বেস্টসেলার বই</h2>
-          </div>
-        </div>
-        <div className="box">
-          <div className="subject ">
-            <h2>প্যাকেজ সমুহ</h2>
-          </div>
-        </div>
-        <div className="box">
-          <div className="subject ">
           <Link to="/historyBooks">ইতিহাস</Link>
+          </div>
+        </div>
+        <div className="box">
+          <div className="subject ">
+          <Link to="/historyBooks">বেস্টসেলার বই</Link>
+          </div>
+        </div>
+        <div className="box">
+          <div className="subject ">
+          <Link to="/historyBooks">প্যাকেজ সমুহ</Link>
+          </div>
+        </div>
+        <div className="box">
+          <div className="subject ">
+          <Link to="/novelBooks">প্রি-অর্ডার</Link>
           </div>
         </div>
       </div>
