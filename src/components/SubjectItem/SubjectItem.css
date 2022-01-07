@@ -12,3 +12,11 @@
   background-color: #0077a3b9;
   color: #fff;
 }
+@media only screen and (min-width: 375px) {
+  .subjectItems {
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 50px;
+    border: none;
+  }
+}

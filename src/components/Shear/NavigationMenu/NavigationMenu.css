@@ -5,3 +5,10 @@
 .my_desing_navbar a {
   font-size: 18px;
 }
+@media only screen and (min-width: 375px) {
+  .my_desing_navbar ul,
+  a {
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+}

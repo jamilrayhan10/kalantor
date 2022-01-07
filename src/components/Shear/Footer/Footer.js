@@ -89,10 +89,10 @@ const Footer = () => {
               <p className="ms-3"> দোকান নং ১৬, বাংলাবাজার, ঢাকা-১১০০</p>
               <h6 className="mt-3">contact info :</h6> <hr className=" my-2 " />
               <p>
-                <i className="fas fa-phone-alt"></i> 01312-103590
+                <i className="fas fa-phone-alt"></i> 0000000000
               </p>
               <p>
-                <i className="fas fa-phone-alt"></i> 01711-984821
+                <i className="fas fa-phone-alt"></i> 1111111111
               </p>
               <p>
                 <i className="fas fa-envelope"></i>{" "}

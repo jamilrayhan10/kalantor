@@ -15,8 +15,9 @@ const Hero = ({ placeholder, data }) => {
     setWordEntered(searchWord);
     const newFilter = data.filter((value) => {
       return value.title.toLowerCase().includes(searchWord.toLowerCase());
+      
     });
-
+    e.preventDefault()
     if (searchWord === "") {
       setFilteredData([]);
     } else {
@@ -27,15 +28,16 @@ const Hero = ({ placeholder, data }) => {
   const clearInput = () => {
     setFilteredData([]);
     setWordEntered("");
+  
   };
   
   return (
     <div className="container mt-3">
-      <div className="d-flex justify-content-between align-items-center">
+      <div className="bookDisplay d-flex justify-content-between align-items-center">
         <div className="logo ">
           <img src={Logo} alt="" />
         </div>
-        <div className="search_input">
+         <div className="search_input">
 
               {/* <label
                 className="visually-hidden"
@@ -66,7 +68,7 @@ const Hero = ({ placeholder, data }) => {
                 </div>
                     {filteredData.length !== 0 && (
                   <div className="dataResult">
-                    {filteredData.slice(0, 15).map((value, key) => {
+                    {filteredData.slice(0,10).map((value, key) => {
                       return (
                         <a className="dataItem" href={value.link} target="_blank" rel='noreferrer'>
                           <p>{value.author} </p>
@@ -89,11 +91,13 @@ const Hero = ({ placeholder, data }) => {
                     </div> */}
               </div>
       
-           </div>
-           <div className="login">
+        </div>
+        
+
+        <div className="login">
           <div className="hover_login">
             <i className="fas fa-cart-plus  fs-5 me-2 me-4 addToCard"></i>
-            <button className="btn border ">Login</button>
+            <button className="buttonLong btn border">Login</button>
           </div>
           <div className="login_after_hover">
             <div className="login_box p-3">
